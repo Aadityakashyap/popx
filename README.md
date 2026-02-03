@@ -2,8 +2,6 @@
 
 A mobile App interface centered on the webpage PopX authentication flow built using React (Vite) and Tailwind CSS, with smooth animations and persistent authentication.
 
----
-
 ## Features
 
 - Mobile-first UI (centered app layout)
@@ -11,16 +9,12 @@ A mobile App interface centered on the webpage PopX authentication flow built us
 - Persistent user data using LocalStorage
 - Fully responsive and Smooth page transitions
 
----
-
 ## Tech Stack
 
-React 18 + Vite
-Tailwind CSS
-React Router
-LocalStorage
-
----
+- React 18 + Vite
+- Tailwind CSS
+- React Router
+- LocalStorage
 
 ## Authentication Logic
 
@@ -41,8 +35,6 @@ LocalStorage
 - Loads user data from `localStorage`
 - Falls back to default values if data is missing or empty
 
----
-
 ## LocalStorage Schema
 
 ```json
@@ -55,8 +47,6 @@ LocalStorage
   "agency": "yes"
 }
 ```
-
----
 
 ## Installation & Setup
 
@@ -80,8 +70,6 @@ npm run dev
 ```
 
 Visit `http://localhost:5173`
-
----
 
 ## Deployment
 
