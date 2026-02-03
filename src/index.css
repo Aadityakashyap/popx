@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #F7F8F9;
+  --color-btn: #6C25FF;
+  --color-btn2: #6C25FF4B;
+  --color-secondary: #E70B897B;
+  --color-text: #FFFFFF;
+  --color-text2: #1D2226;
+  --color-border: #CBCBCB;
+  --color-placeholder: #919191;
+  --color-error: #DD4A3D;
+}
+
+@layer base {
+  body {
+    font-family: "Rubik", sans-serif;
+    @apply bg-gray-100 text-text2 antialiased;
+  }
+}
+
+@layer components {
+  .app-frame {
+    @apply bg-bg w-97.5 max-w-full shadow-xl overflow-hidden;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-btn placeholder-transparent focus:border-transparent border-border;
+  }
+
+  .btn-primary {
+    @apply w-full py-3 rounded-lg font-medium text-[16px] transition active:scale-[0.98];
+  }
+
+  .btn-disabled {
+    @apply bg-border cursor-not-allowed;
+  }
+}
